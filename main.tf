@@ -4,10 +4,10 @@ resource "aws_dynamodb_table" "veiculos" {
   read_capacity  = var.read_capacity
   write_capacity = var.write_capacity
 
-  hash_key = "id"
+  hash_key = "chassi"
 
   attribute {
-    name = "id"
+    name = "chassi"
     type = "S"
   }
 
